@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="tarea1"/>
+        <attribute name="authors" value="Suzette Uni"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-25 07:13:18 p. m."/>
+        <attribute name="created" value="U3V6ZXR0ZSBVbmk7TVNQRjsyMDI1LTAzLTI1OzA2OjM4OjA3IHAuIG0uOzI4NzM="/>
+        <attribute name="edited" value="U3V6ZXR0ZSBVbmk7TVNQRjsyMDI1LTAzLTI1OzA3OjEzOjE4IHAuIG0uOzE7Mjk3Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Precio" type="Integer" array="False" size=""/>
+            <declare name="desc2" type="Integer" array="False" size=""/>
+            <declare name="cantidad" type="Integer" array="False" size=""/>
+            <declare name="total" type="Integer" array="False" size=""/>
+            <assign variable="Precio" expression="10.0"/>
+            <assign variable="desc2" expression="2.00"/>
+            <input variable="cantidad"/>
+            <if expression="cantidad &lt;50">
+                <then>
+                    <assign variable="total" expression="(cantidad*precio)-cantidad"/>
+                </then>
+                <else>
+                    <assign variable="total" expression="(cantidad*precio)-(cantidad*desc2)"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
