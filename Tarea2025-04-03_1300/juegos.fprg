@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="juegos"/>
+        <attribute name="authors" value="Suzette Uni"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 08:04:27 p. m."/>
+        <attribute name="created" value="U3V6ZXR0ZSBVbmk7TVNQRjsyMDI1LTA0LTAyOzA3OjUzOjI5IHAuIG0uOzI4NzE="/>
+        <attribute name="edited" value="U3V6ZXR0ZSBVbmk7TVNQRjsyMDI1LTA0LTAyOzA4OjA0OjI3IHAuIG0uOzE7Mjk3NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hola, &#191;Qu&#233; edad tienes?&quot;" newline="True"/>
+            <declare name="cliente" type="Integer" array="False" size=""/>
+            <input variable="cliente"/>
+            <if expression="cliente&lt;4">
+                <then>
+                    <output expression="&quot;Tu entrada es GRATIS&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="cliente&gt;=4&#13;&#10;AND&#13;&#10;cliente&lt;=18">
+                        <then>
+                            <output expression="&quot;El precio es de $200&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;El precio es de $500&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
