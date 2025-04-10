@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="factorial"/>
+        <attribute name="authors" value="Suzette Uni"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 06:49:19 p. m."/>
+        <attribute name="created" value="U3V6ZXR0ZSBVbmk7TVNQRjsyMDI1LTA0LTA4OzA1OjIxOjE4IHAuIG0uOzI4Njg="/>
+        <attribute name="edited" value="U3V6ZXR0ZSBVbmk7TVNQRjsyMDI1LTA0LTA4OzA2OjQ5OjE5IHAuIG0uOzE7Mjk4OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="factorial" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <assign variable="factorial" expression="1"/>
+            <output expression="&quot;introduzca un numero entero&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="i" end="n" direction="inc" step="1">
+                <assign variable="factorial" expression="factorial*i"/>
+            </for>
+            <output expression="factorial" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
